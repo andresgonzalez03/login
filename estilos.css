@@ -28,3 +28,104 @@ footer {
   margin-top: 40px;
   font-weight: bold;
 }
+/* Estilo general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 20px;
+  font-size: 2.5em;
+}
+
+.intro p {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #ffffff;
+  border-left: 5px solid #3498db;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  color: #2980b9;
+  margin-bottom: 15px;
+}
+
+/* Ingredientes y Recomendaciones */
+.ingredients, .tips {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  list-style: none;
+}
+
+.ingredients li, .tips li {
+  margin-bottom: 8px;
+  padding: 8px;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+}
+
+/* Pasos */
+ol {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  position: relative;
+}
+
+li::before {
+  content: "✔ ";
+  color: #27ae60;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #2c3e50;
+  color: white;
+  font-size: 0.9em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Hover en listas */
+li:hover {
+  background-color: #d5eaf4;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  ol, .ingredients, .tips {
+      margin: 10px;
+      padding: 15px;
+  }
+}
